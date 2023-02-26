@@ -26,6 +26,10 @@ header {
   text-align: center; /* tac */
 }
 
+ul {
+  list-style-position: inside; /* this centers the list item bullet with the text */
+}
+
 nav {
   background-color: #fff; /* bgc#fff */
   font-weight: bold; /* fwb */
