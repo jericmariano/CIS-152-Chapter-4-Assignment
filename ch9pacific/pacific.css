@@ -147,6 +147,28 @@ footer {
   height: 300px; /* h300 */
 }
 
+table {
+  border-bottom: 2px solid #1976d2; /* bdb */
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.5em; /* p.5em */
+  /* border: 2px solid #39c; */
+}
+
+td {
+  text-align: center; /* tac */
+}
+
+.text {
+  text-align: left; /* ta:l */
+}
+
+tr:nth-last-of-type(odd) {
+  
+}
+
 @media (max-width: 420px) {
   header {
     background-image: none;
