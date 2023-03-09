@@ -33,6 +33,7 @@ header {
   background-repeat: no-repeat; /* bgr */
   background-size: contain; /* bgz */
   color: #fff; /* c#fff */
+  padding: 0.5em auto;
   /* height: 120px; h120 */
   /* padding-top: 30px; pt30 */
   text-align: center; /* tac */
@@ -149,7 +150,7 @@ footer {
 
 table {
   border-bottom: 2px solid #1976d2; /* bdb */
-  border-collapse: collapse;
+  border-collapse: separate ;
 }
 
 td, th {
@@ -161,17 +162,77 @@ td {
   text-align: center; /* tac */
 }
 
+th {
+  background-color: #1976d2;
+  color: #fff;
+}
+
 .text {
   text-align: left; /* ta:l */
 }
 
 tr:nth-last-of-type(odd) {
-  
+  background-color: #ffcd6f; /* bgc#ffcd6f */
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   header {
     background-image: none;
+  }
+  #homehero, #yurthero, #trailhero {
+    background-size: auto;
+  }
+
+  #special table {
+    display: block; /* db */
+    border: none; /* bd:n */
+  }
+
+  #special td,
+  #special th {
+    display: block; /* db */
+  }
+
+  #special thead {
+    display: none; /* dn */
+  }
+
+  td.package::before {
+    content: "Package:";
+  }
+
+  td.description::before {
+    content: "Description:"
+  }
+
+  td.nights::before {
+    content: "Nights:";
+  }
+
+  td.cost::before {
+    content: "Cost:"
+  }
+
+  td.package,
+  td.description,
+  td.nights,
+  td.cost {
+    padding-left: 35%; /* pl35% */
+    position: relative; /* pos:r */
+    text-align: left; /* ta:l */
+    font-size: 4vw;
+  }
+
+  td::before {
+    position: absolute; /* pos:a */
+    top: 6px; /* t6 */
+    left: 0.5em; /* l.5em */
+    font-weight: bold; /* fwb */
+    color: #1976d2; /* c#1976d2 */
+  }
+
+  td:last-of-type {
+    border-bottom: 2px solid #1b69b2; /*  bb2-solid-#1b69b2 */
   }
 }
 
